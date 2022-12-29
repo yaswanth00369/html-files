@@ -1,4 +1,4 @@
-FROM amazonlinux:2
+FROM amazonlinux:latest
 LABEL "Author" = "Yaswanth"
 LABEL "Date"   = "29-Dec-2022"
 RUN yum update -y
