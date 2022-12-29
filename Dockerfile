@@ -5,5 +5,5 @@ RUN yum update -y
 RUN yum install httpd -y
 RUN systemctl enable httpd
 COPY  . /var/www/html
-RUN systemctl restart httpd
+CMD ["httpd-foreground"]
 EXPOSE 81
